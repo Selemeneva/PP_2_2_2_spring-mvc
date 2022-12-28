@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Repository
-@Component
 public class CarDaoImp implements CarDao {
 
     private List<Car> carList;

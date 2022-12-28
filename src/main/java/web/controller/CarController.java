@@ -21,13 +21,15 @@ public class CarController {
     @GetMapping()
 
     public String index(@RequestParam(value = "count", defaultValue = "5") int count, Model model) {
-        if (count >0 && count <=5) {
+        if (count > 0 && count <= 5) {
             model.addAttribute("car", carService.getCar(count));
-            return "cars";
         } else {
-            return "default";
+            model.addAttribute("car", carService.getCar(5));
         }
+        return "cars";
+
 
     }
 }
+
 
