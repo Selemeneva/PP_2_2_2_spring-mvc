@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cars</title>
+    <title></title>
 </head>
 <body>
+<h1>Cars of my dream</h1>
 <table>
     <tr>
         <th>Model</th>
@@ -13,7 +14,7 @@
         <th>Series</th>
     </tr>
 
-    <tr th:each="cars :${cars}">
+    <tr th:each="cars :${car}">
         <td th:text="${cars.getModel()}"></td>
         <td th:text="${cars.getColor()}"></td>
         <td th:text="${cars.getSeries()}"></td>
